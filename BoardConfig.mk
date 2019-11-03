@@ -238,5 +238,8 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 #  SDCLANG_LTO_DEFS := device/qcom/common/sdllvm-lto-defs.mk
 # endif
 
+#allow arm64 libhybris
+HYBRIS_MEDIA_32_BIT_ONLY := false
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/santoni/BoardConfigVendor.mk
