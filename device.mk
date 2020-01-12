@@ -288,6 +288,11 @@ PRODUCT_COPY_FILES += \
 # Ubuntu Touch #
 ################
 
+# telepathy-ofono quirks
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.t-o.quirk.forcesink=sink.primary_output \
+    ro.t-o.quirk.forcesource=source.primary_input
+
 # Aethercast
 PRODUCT_PROPERTY_OVERRIDES += \
     ubuntu.widi.supported=1
