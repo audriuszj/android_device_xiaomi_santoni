@@ -288,6 +288,10 @@ PRODUCT_COPY_FILES += \
 # Ubuntu Touch #
 ################
 
+# Wakelock
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.qc.sensors.wl_dis=true
+
 # telepathy-ofono quirks
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.t-o.quirk.forcesink=sink.primary_output \
