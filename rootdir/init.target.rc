@@ -441,3 +441,5 @@ service mlipayservice /system/bin/mlipayd
         chown system system /dev/cpuset/camera-daemon/tasks
         chmod 0664 /dev/cpuset/camera-daemon/tasks
 
+    # mtp on boot
+    setprop persist.sys.usb.config mtp
