@@ -232,6 +232,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.rc \
     init.qcom.sh \
+    init.recovery.qcom.rc \
     init.qti.ims.sh \
     init.target.rc \
     init_setup_first_boot.sh \
