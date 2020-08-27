@@ -31,6 +31,11 @@ on fs
     mkdir /persist
     mkdir /dsp
 
+    mount_all ./fstab.${ro.hardware}
+    mkdir /data/cache
+    mount none /data/cache /cache bind
+    mkdir /data/cache/recovery
+
 on init
     chmod 0660 /dev/qseecom
     chown system drmrpc /dev/qseecom
